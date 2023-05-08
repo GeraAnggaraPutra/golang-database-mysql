@@ -196,7 +196,7 @@ func TestAutoIncrement(t *testing.T) {
 	if err != nil {
 		panic(err)
 	}
-	insertId, err := result.LastInsertId()
+	insertId, err := result.LastInsertId() // mendapatkan id terakhir yg dibuat secara auto increment
 	if err != nil {
 		panic(err)
 	}
